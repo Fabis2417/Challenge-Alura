@@ -358,7 +358,7 @@ main {
     }
     #input-texto{
         width: 320px;
-        height: 250px;
+        height: 200px;
         font-size: 16px;
     }
     .buttons {
@@ -372,7 +372,7 @@ main {
         
     }
     .input p{
-        top: 41%;
+        top: 40%;
         left: 12%;
     }
 
@@ -388,12 +388,13 @@ main {
     }
 
     .container-btn {
-        align-items: center;
+       
         justify-content: center;
         flex-direction: column;
         width: 320px;
         top: 55%;
         height: 5%;
+        left: 25%;
          
     }
 
