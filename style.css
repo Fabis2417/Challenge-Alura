@@ -61,7 +61,7 @@ main {
     font-size: 1rem;
     border: none;
     background-color: transparent;
-    border: 2px solid var(--corsecundaria);
+    border: 2px solid transparent;
     border-radius: 8px;
     color: var(--corsecundaria);
     text-transform: lowercase;
@@ -383,7 +383,6 @@ main {
         align-items: center;
         font-size: 0.8rem;
         text-align: center;
-       
         padding: 10px  15px;
     }
 
@@ -436,9 +435,6 @@ main {
         font-weight: 700;
         line-height: 28.8px;
         text-align: center;
-
-
-
         padding: 15px;
         font-size: 24px;
     }
@@ -464,15 +460,24 @@ main {
 }
 
 @media  (min-width: 1440px) and (max-width: 1440px) {
+     #input-texto{
+        width: 600px;
+        height: 600px;
+        font-size: 24px;
+    }
+
     .input p{
         top: 75%;
+        font-size: 16px;
     }
+    
     .container-btn{
         top: 80%;
     }
+    
     #output{
-        width: 700px;
-        height: 600px;
+        width: 400px;
+        height: 800px;
     }
 
     #output h2{
@@ -484,6 +489,7 @@ main {
     }
     #output textarea{
         height: 800px;
+        font-size: 24px;
     }
 }
 
