@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logoAlura.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/logoAlura.png" alt="Logo Alura">
+    </header>
+    <main class="main container">
+        <section class="input-section">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite o seu texto..."></textarea>
+                <p>
+                    <img src="assets/exclamation-circle.png" alt="Exclamação">
+                    Apenas letras minúsculas e sem acento.
+                </p>
+            </div>
+            <div class="buttons">
+                <div class="container-btn">
+                    <button onclick="criptografar()" class="btn-criptografar">
+                        <span class="btn-text">Criptografar</span>
+                    </button>
+                    <button onclick="descriptografar()" class="btn-descriptografar">
+                        <span class="btn-text">Descriptografar</span>
+                    </button>
+                </div>
+            </div>
+            </section>
+        <section id="output-section">
+            <div id="output">
+                <img src="assets/meninoelupa.png" alt="Menino com lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h3>Desenvolvido por Fabiola Santiago.</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

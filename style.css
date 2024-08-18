@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --fontecolor: #495057;
+
+    --corprimaria: #F3F5FC;
+    --corsecundaria: #0A3871;
+    --corquartiaria: #FFFFFF;
+    --corquintuaria: #343A40;
+    --corsextuaria: #D8DFE8;
+    --corsetimaria: #003f7f;
+
+    --corhoverprimaria: #0056b3;
+    --corhoversecundario: #D8DFE8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--corprimaria);
+}
+
+.cabecalho img {
+    width: 120px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 480px;
+}    
+
+.input {
+    display: flex;
+    position: fixed;
+    top: 10%;
+    left: 8%;
+    border: none;
+    width: 40%;
+    height: 15%;
+    resize: none;
+    padding-top: 20px;
+    outline: none;
+}
+
+#input-texto {
+    width: 600px;
+    height: 320px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    border: 2px solid var(--corsecundaria);
+    border-radius: 8px;
+    color: var(--corsecundaria);
+    text-transform: lowercase;
+    resize: none;
+}
+
+#input-texto::placeholder {
+    color: var(--corsecundaria);
+}
+
+.input p {
+    margin-top: 10px;
+    position: fixed;
+    font-size: 0.75rem;
+    left: 8%;
+    top: 71%;
+    color: var(--fontecolor);
+}
+
+
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 40%;
+    height: 75%;
+    left: 60%;
+    width: 400px;
+    padding: 20px;
+    top: 10%;
+    background-color: var(--corquartiaria);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#output h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--corquintuaria);
+    margin-bottom: 10px;
+}
+
+#output span {
+    font-size: 1rem;
+    color: var(--fontecolor);
+}
+
+#output textarea {
+    outline: none;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    top: 10px;
+    font-size: 1rem;
+    color: var(--corsecundaria);
+    background-color: var(--corquartiaria);
+    border: 2px solid var(--corsecundaria);
+    border-radius: 8px;
+    resize: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.container-btn {
+    display: flex;
+    position: fixed;
+    width: 40%;
+    top: 80%;
+    gap: 20px;
+    left: 8%;
+    
+}
+
+.btn-criptografar,
+.btn-descriptografar,
+.btn-copiar {
+    width: 328px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 32px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-criptografar {
+    background-color: var(--corsecundaria);
+    color: var(--corquartiaria);
+}
+
+.btn-criptografar:hover {
+    background-color: var(--corhoverprimaria);
+}
+
+.btn-descriptografar {
+    background-color: var(--corhoversecundario);
+    color: var(--corsecundaria);
+    border: 2px solid var(--corsecundaria);
+}
+
+.btn-descriptografar:hover {
+    background-color: var(--corhoverprimaria);
+    color: var(--corquartiaria);
+}
+
+.btn-copiar {
+    background-color: var(--corhoversecundario);
+    color: var(--corsecundaria);
+    border: 2px solid var(--corsecundaria);
+    width: 200px;
+    height: 52px;
+    margin-top: 10px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    background-color: var(--corsecundaria);
+    color: var(--corprimaria);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+    main{
+       display: flex;
+       flex-direction: column;
+        height: 1177px;
+    }
+    .cabecalho img{
+        width: 130px;
+        height: 60px;
+    }
+    .input{
+        width: 688px;
+        height: 100px;
+        top: 240px;
+        left: 40px;
+        gap: 0px;
+        opacity: 0px;
+        
+    }
+    #input-texto{
+        font-size: 2rem;
+        width: 688px;
+    }
+    .buttons {
+        display: flex;
+        gap: 24px; 
+        align-items: center;
+        width: 688px;
+        
+        
+    }
+    .input p{
+        width: 352px;
+        height: 18px;
+        font-size: 0.8rem;
+        top: 650px;
+        left: 40px;
+        gap: 8px;
+        opacity: 0px;
+    }
+
+    .btn-criptografar,
+    .btn-descriptografar,
+    .btn-copiar {
+        width: 328px;
+        height: 67px;
+        align-items: center;
+        font-size: 1.3rem;
+        text-align: center;
+        gap: 24px;
+        border-radius: 24px;
+        
+        padding: 15px  25px;
+    }
+
+    .container-btn {
+       width: 688px;
+        gap: 24px;
+        top: 65%;
+        left: 5%;
+        
+         
+    }
+
+    #output {
+        flex-direction: column;
+        display: flex;
+        width: 688px;
+        height: 233px;
+        top: 850px;
+        left: 40px;
+        padding: 32px;
+        gap: 32px;
+        border-radius: 32px;
+        opacity: 0px;
+
+        box-shadow: 0px 24px 32px -8px #beaaaa14;
+
+    }
+    #output img{
+        display: none;    
+    }
+
+    #output textarea{
+        width: 688px;
+        height: 343px;
+        top: 1001px;
+        left: 40px;
+        font-size: 24px;
+        padding: 12px;
+        gap: 32px;
+        border-radius: 32px;
+        opacity: 0px;
+
+    }
+    #output h2{
+        width: 624px;
+        height: 29px;
+        gap: 0px;
+        opacity: 0px;
+        color: #343A40;
+        padding: 20px;
+
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: center;
+        
+    }
+    #output span{
+        width: 624px;
+        height: 24px;
+        gap: 0px;
+        opacity: 0px;
+        padding: 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+
+    }
+    #copiar.btn-copiar{
+        width: 624px;
+        height: 67px;
+        padding: 24px;
+        gap: 8px;
+        border-radius: 24px;
+        border: 1px;
+        opacity: 0px;
+
+        border: 1px solid #0A3871
+
+    }
+    .rodape{
+        font-size: 1rem;
+    }
+
+
+}
+
+
+/* Para smartphones */
+@media  (max-width:480px) and (min-width: 320px)  {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabecalho img{
+        
+        width: 60px;
+        height: 24px;
+        
+    }
+    .input{
+        width: 300px;
+        height: 40px;
+        left: 12%;
+        top: 10%;
+    }
+    #input-texto{
+        width: 320px;
+        height: 250px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        
+        font-size: 0.2rem;
+        
+    }
+    .input p{
+        top: 50%;
+        left: 12%;
+    }
+
+    .btn-criptografar,
+    .btn-descriptografar {
+        width: 228px;
+        height: 37px;
+        align-items: center;
+        font-size: 0.8rem;
+        text-align: center;
+        left: 12%;
+        padding: 10px  15px;
+    }
+
+    .container-btn {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 60%;
+        height: 5%;
+         
+    }
+
+    #output {
+        position: fixed;
+        align-items: center;
+        width: 320px;
+        height: 200px;
+        padding: 10px;
+        top: 70%;
+        gap: 16px;
+        left: 12%;
+        box-shadow: 0px 24px 32px -8px #00000014;
+
+    }
+    #output img{
+        display: none;    
+    }
+
+    #output textarea{
+        width: 320px;
+        height: 250px; 
+    }
+
+    #copiar.btn-copiar{
+        width: 228px;
+        height: 37px;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    #output h2{
+        width: 273px;
+        height: 58px;
+        gap: 16px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: center;
+
+
+
+        padding: 15px;
+        font-size: 24px;
+    }
+    #output span{
+        width: 283px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .input p{
+        top: 69%;
+    }
+    .container-btn{
+        top: 75%;
+    }
+    #output{
+        height: 400px;
+    }
+}
+
+@media  (min-width: 1440px) and (max-width: 1440px) {
+    .input p{
+        top: 75%;
+    }
+    .container-btn{
+        top: 80%;
+    }
+    #output{
+        width: 700px;
+        height: 600px;
+    }
+
+    #output h2{
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    #output span{
+        font-size: 1.5rem;
+    }
+    #output textarea{
+        height: 800px;
+    }
+}
+
