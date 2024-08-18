@@ -391,7 +391,8 @@ main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        top: 60%;
+        width: 320px;
+        top: 55%;
         height: 5%;
          
     }
