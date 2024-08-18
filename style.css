@@ -372,13 +372,13 @@ main {
         
     }
     .input p{
-        top: 40%;
+        top: 38%;
         left: 12%;
     }
 
     .btn-criptografar,
     .btn-descriptografar {
-        width: 228px;
+        width: 300px;
         height: 37px;
         align-items: center;
         font-size: 0.8rem;
@@ -394,7 +394,7 @@ main {
         width: 320px;
         top: 50%;
         height: 5%;
-        left: 25%;
+        left: 12%;
          
     }
 
@@ -417,6 +417,7 @@ main {
     #output textarea{
         width: 320px;
         height: 250px; 
+        font-size: 16px;
     }
 
     #copiar.btn-copiar{
