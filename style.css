@@ -301,9 +301,8 @@ main {
         opacity: 0px;
         color: #343A40;
         padding: 20px;
-
         font-family: 'Inter', sans-serif;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         line-height: 28.8px;
         text-align: center;
@@ -316,7 +315,7 @@ main {
         opacity: 0px;
         padding: 20px;
         font-family: 'Inter', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 24px;
         text-align: center;
@@ -330,15 +329,12 @@ main {
         border-radius: 24px;
         border: 1px;
         opacity: 0px;
-
         border: 1px solid #0A3871
-
     }
+    
     .rodape{
         font-size: 1rem;
     }
-
-
 }
 
 
@@ -453,7 +449,10 @@ main {
         height: 48px;
         font-size: 16px;
     }
-
+    .rodape{
+        font-size: 1rem;
+    
+    }
 
 }
 
