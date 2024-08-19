@@ -208,7 +208,7 @@ main {
     .input{
         width: 688px;
         height: 300px;
-        top: 200px;
+        top: 170px;
         left: 40px;
         gap: 0px;
         opacity: 0px;
@@ -218,7 +218,7 @@ main {
         font-size: 2rem;
         width: 688px;
         height: 300px;
-        top: 200px;
+        top: 170px;
         position: fixed;
         
     }
