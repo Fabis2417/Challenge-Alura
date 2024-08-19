@@ -271,7 +271,7 @@ main {
         top: 600px;
         left: 40px;
         padding: 32px;
-        gap: 32px;
+        gap: 24px;
         border-radius: 32px;
         opacity: 0px;
 
@@ -365,6 +365,7 @@ main {
         height: 200px;
         overflow-wrap: break-word;
         font-size: 16px;
+        top: auto;
     }
     .buttons {
         display: flex;
