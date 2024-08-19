@@ -207,8 +207,8 @@ main {
     }
     .input{
         width: 688px;
-        height: 100px;
-        top: 240px;
+        height: 300px;
+        top: 200px;
         left: 40px;
         gap: 0px;
         opacity: 0px;
@@ -217,7 +217,8 @@ main {
     #input-texto{
         font-size: 2rem;
         width: 688px;
-        top: 240px;
+        height: 300px;
+        top: 200px;
         position: fixed;
         
     }
@@ -233,7 +234,7 @@ main {
         width: 352px;
         height: 18px;
         font-size: 0.8rem;
-        top: 550px;
+        top: 450px;
         left: 40px;
         gap: 8px;
         opacity: 0px;
@@ -256,7 +257,7 @@ main {
     .container-btn {
        width: 688px;
         gap: 24px;
-        top: 65%;
+        top: 55%;
         left: 5%;
         
          
@@ -267,7 +268,7 @@ main {
         display: flex;
         width: 688px;
         height: 233px;
-        top: 750px;
+        top: 600px;
         left: 40px;
         padding: 32px;
         gap: 32px;
