@@ -99,6 +99,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 #output h2 {
@@ -362,6 +363,7 @@ main {
     #input-texto{
         width: 320px;
         height: 200px;
+        overflow-wrap: break-word;
         font-size: 16px;
     }
     .buttons {
@@ -419,6 +421,7 @@ main {
     #output textarea{
         width: 320px;
         height: 250px; 
+        overflow-wrap: break-word;
         font-size: 16px;
     }
 
