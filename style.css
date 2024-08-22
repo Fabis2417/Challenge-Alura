@@ -196,15 +196,18 @@ main {
 
 /* Para tablets */
 @media (max-width: 768px) {
+    
     main{
        display: flex;
        flex-direction: column;
        height: 1177px;
     }
+    
     .cabecalho img{
         width: 130px;
         height: 60px;
     }
+    
     .input{
         width: 688px;
         height: 300px;
@@ -212,16 +215,16 @@ main {
         left: 40px;
         gap: 0px;
         opacity: 0px;
-        
     }
+    
     #input-texto{
         font-size: 2rem;
         width: 688px;
         height: 300px;
         top: 170px;
         position: fixed;
-        
     }
+    
     .buttons {
         display: flex;
         gap: 24px; 
@@ -250,7 +253,6 @@ main {
         text-align: center;
         gap: 24px;
         border-radius: 24px;
-        
         padding: 15px  25px;
     }
 
@@ -259,8 +261,6 @@ main {
         gap: 24px;
         top: 55%;
         left: 5%;
-        
-         
     }
 
     #output {
@@ -274,10 +274,9 @@ main {
         gap: 24px;
         border-radius: 32px;
         opacity: 0px;
-
         box-shadow: 0px 24px 32px -8px #beaaaa14;
-
     }
+    
     #output img{
         display: none;    
     }
@@ -292,8 +291,8 @@ main {
         gap: 32px;
         border-radius: 32px;
         opacity: 0px;
-
     }
+    
     #output h2{
         width: 624px;
         height: 29px;
@@ -305,9 +304,9 @@ main {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 28.8px;
-        text-align: center;
-        
+        text-align: center; 
     }
+    
     #output span{
         width: 624px;
         height: 24px;
@@ -319,8 +318,8 @@ main {
         font-weight: 400;
         line-height: 24px;
         text-align: center;
-
     }
+    
     #copiar.btn-copiar{
         width: 324px;
         height: 47px;
@@ -348,18 +347,19 @@ main {
         align-items: center;
         justify-content: center;
     }
+    
     .cabecalho img{
-        
         width: 60px;
         height: 24px;
-        
     }
+    
     .input{
         width: 300px;
         height: 40px;
         left: 12%;
         top: 8%;
     }
+    
     #input-texto{
         width: 320px;
         height: 200px;
@@ -367,6 +367,7 @@ main {
         font-size: 16px;
         top: auto;
     }
+    
     .buttons {
         display: flex;
         flex-direction: column;
@@ -375,8 +376,8 @@ main {
         width: 10%;
         
         font-size: 0.2rem;
-        
     }
+    
     .input p{
         top: 38%;
         left: 12%;
@@ -393,14 +394,12 @@ main {
     }
 
     .container-btn {
-       
         justify-content: center;
         flex-direction: column;
         width: 320px;
         top: 50%;
         height: 5%;
         left: 12%;
-         
     }
 
     #output {
@@ -413,8 +412,8 @@ main {
         gap: 16px;
         left: 12%;
         box-shadow: 0px 24px 32px -8px #00000014;
-
     }
+    
     #output img{
         display: none;    
     }
@@ -432,6 +431,7 @@ main {
         padding: 5px;
         font-size: 0.8rem;
     }
+    
     #output h2{
         width: 273px;
         height: 58px;
@@ -445,14 +445,15 @@ main {
         padding: 15px;
         font-size: 24px;
     }
+    
     #output span{
         width: 283px;
         height: 48px;
         font-size: 16px;
     }
+    
     .rodape{
         font-size: 1rem;
-    
     }
 
 }
@@ -461,9 +462,11 @@ main {
     .input p{
         top: 69%;
     }
+    
     .container-btn{
         top: 75%;
     }
+    
     #output{
         height: 400px;
     }
